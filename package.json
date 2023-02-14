@@ -14,5 +14,9 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.58.1"
+  },
+  "dependencies": {
+    "cesium": "^1.102.0",
+    "lit": "^2.6.1"
   }
 }
