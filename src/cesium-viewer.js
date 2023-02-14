@@ -7,7 +7,7 @@ const widgetStyles = css`
   ${unsafeCSS(widgetStylesRaw)}
 `;
 // The URL on your server where CesiumJS's static files are hosted.
-window.CESIUM_BASE_URL = '/';
+window.CESIUM_BASE_URL = 'static/';
 
 // Your access token can be found at: https://ion.cesium.com/tokens.
 // This is the default access token from your ion account
@@ -15,9 +15,9 @@ Cesium.Ion.defaultAccessToken =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwMDY5YjNjNy05ZDZjLTQ5YjUtODBhOC03MGY4Njc3MzUyMDEiLCJpZCI6MTEyNTc3LCJpYXQiOjE2NjY4MTYyNjB9.fd9TA4pMsDaKBWE1lSEBvYB34xR-R1anLfSG-vSVI4c';
 
 // Initialize the Cesium Viewer in the HTML element with the "cesiumContainer" ID.
-// const viewer = new Cesium.Viewer('cesiumContainer', {
-//   terrainProvider: Cesium.createWorldTerrain(),
-// });
+const viewer = new Cesium.Viewer('cesiumContainer', {
+  terrainProvider: Cesium.createWorldTerrain(),
+});
 // // Add Cesium OSM Buildings, a global 3D buildings layer.
 // const buildingTileset = viewer.scene.primitives.add(
 //   Cesium.createOsmBuildings()
