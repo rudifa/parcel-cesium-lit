@@ -1,5 +1,5 @@
 // create a lit element
-import {LitElement, html} from 'lit-element';
+import {LitElement, html} from 'lit';
 
 export class MyElement extends LitElement {
   render() {

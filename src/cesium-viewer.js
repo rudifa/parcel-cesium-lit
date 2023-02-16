@@ -1,4 +1,4 @@
-import {LitElement, html, css, unsafeCSS} from 'lit-element';
+import {LitElement, html, css, unsafeCSS} from 'lit';
 
 import * as Cesium from 'cesium';
 
@@ -32,6 +32,13 @@ Cesium.Ion.defaultAccessToken =
 // });
 
 export class CesiumViewer extends LitElement {
+  static get styles() {
+    return css`
+      body {
+        color: red;
+      }
+    `;
+  }
   firstUpdated() {
     const cesiumContainer = this.renderRoot.getElementById('cesiumContainer');
     console.log(`firstUpdated cesiumContainer:`, cesiumContainer);
